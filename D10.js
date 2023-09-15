@@ -486,11 +486,11 @@ sumAllTheYears(movies)
 // const removeIndex = function (n) {
 //   for (let i = 0; i < movies.length; i++) {
 //     const find = movies[i].splice(n, 1)
-//     delete find
+//     return find
 //   }
 // }
 
-// console.log(removeIndex(2))
+// console.log(removeIndex(3))
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
@@ -596,6 +596,16 @@ sumAllTheYears(movies)
   ***
 
 */
+
+const halfTree = function (h) {
+  for (let i = 1; i <= h; i++) {
+    let empty = ' '.repeat(h - 1) //stampa gli spazi
+    let ast = '*'.repeat(i - 1) //stampa gli asterischi
+    console.log(ast + empty)
+  }
+}
+
+halfTree(4)
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
